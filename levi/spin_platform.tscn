@@ -60,3 +60,16 @@ rotation = 1.5671531
 scale = Vector2(0.60275686, 0.60275686)
 texture = ExtResource("2_w0ntc")
 metadata/_edit_group_ = true
+
+[node name="AnimatableBody2D5" type="AnimatableBody2D" parent="." unique_id=802742479 groups=["platforms"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D5" unique_id=970455113]
+position = Vector2(1439.5, 922.5)
+shape = SubResource("RectangleShape2D_0twnf")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D5" unique_id=1208789719]
+position = Vector2(1386.5, 994.6115)
+rotation = 1.5671531
+scale = Vector2(0.60275686, 0.60275686)
+texture = ExtResource("2_w0ntc")
+metadata/_edit_group_ = true
