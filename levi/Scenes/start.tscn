@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://bnmnfl8obvax2"]
+
+[ext_resource type="Script" uid="uid://cdhftcii2dxps" path="res://start.gd" id="1_rk01k"]
+[ext_resource type="Texture2D" uid="uid://dnn1ekhj50oh4" path="res://Assets/pixil-layer-Background (5).png" id="2_o3wvq"]
+[ext_resource type="FontFile" uid="uid://d30ncevijnv7s" path="res://Fonts/BlackOpsOne-Regular.ttf" id="3_pg4io"]
+[ext_resource type="FontFile" uid="uid://bjpc53hioiy3d" path="res://Fonts/Orbitron-VariableFont_wght.ttf" id="4_iceld"]
+[ext_resource type="FontFile" uid="uid://chuv23owhk72" path="res://Fonts/Iceberg-Regular.ttf" id="5_7pwkw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pob1m"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gophc"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D" unique_id=1847512940]
+script = ExtResource("1_rk01k")
+
+[node name="PixilLayerBackground(5)" type="Sprite2D" parent="." unique_id=10012926]
+position = Vector2(2441, 1192)
+scale = Vector2(5.812, 5.812)
+texture = ExtResource("2_o3wvq")
+
+[node name="Label" type="Label" parent="." unique_id=1387542070]
+offset_left = 165.0
+offset_top = 18.0
+offset_right = 2253.0
+offset_bottom = 1069.0
+theme_override_fonts/font = ExtResource("3_pg4io")
+theme_override_font_sizes/font_size = 607
+text = "LEVI"
+
+[node name="Label2" type="Label" parent="." unique_id=1470615856]
+offset_left = 200.0
+offset_top = 646.0
+offset_right = 1710.0
+offset_bottom = 827.0
+theme_override_fonts/font = ExtResource("4_iceld")
+theme_override_font_sizes/font_size = 109
+text = "-The Journey of a Littly-"
+
+[node name="Button" type="Button" parent="." unique_id=1016396815]
+offset_left = 293.0
+offset_top = 859.0
+offset_right = 950.0
+offset_bottom = 1030.0
+theme_override_colors/font_color = Color(0.20784314, 0.9019608, 0.9490196, 1)
+theme_override_fonts/font = ExtResource("5_7pwkw")
+theme_override_font_sizes/font_size = 124
+theme_override_styles/normal = SubResource("StyleBoxFlat_pob1m")
+text = "Let's Go!"
+
+[node name="Button2" type="Button" parent="." unique_id=636892867]
+offset_left = 1044.0
+offset_top = 868.0
+offset_right = 1659.0
+offset_bottom = 1031.0
+theme_override_colors/font_color = Color(1, 0.23921569, 0.6039216, 1)
+theme_override_fonts/font = ExtResource("5_7pwkw")
+theme_override_font_sizes/font_size = 124
+theme_override_styles/normal = SubResource("StyleBoxFlat_gophc")
+text = "Options"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
