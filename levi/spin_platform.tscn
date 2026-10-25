@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bp575t6dl187y"]
+
+[ext_resource type="Script" uid="uid://bwkao5vq4a8bq" path="res://spin_platform.gd" id="1_vm2ty"]
+[ext_resource type="Texture2D" uid="uid://bqeai84f1gc0p" path="res://Assets/pixil-layer-Background 2.png" id="2_w0ntc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0twnf"]
+size = Vector2(89, 187)
+
+[node name="Node2D" type="Node2D" unique_id=1698325913]
+script = ExtResource("1_vm2ty")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=209143746 groups=["platforms"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1496139415]
+position = Vector2(1439.5, 922.5)
+shape = SubResource("RectangleShape2D_0twnf")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=1273531121]
+position = Vector2(1386.5, 994.6115)
+rotation = 1.5671531
+scale = Vector2(0.60275686, 0.60275686)
+texture = ExtResource("2_w0ntc")
+metadata/_edit_group_ = true
+
+[node name="AnimatableBody2D2" type="AnimatableBody2D" parent="." unique_id=869352201 groups=["platforms"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D2" unique_id=1122667225]
+position = Vector2(1439.5, 922.5)
+shape = SubResource("RectangleShape2D_0twnf")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D2" unique_id=711418877]
+position = Vector2(1386.5, 994.6115)
+rotation = 1.5671531
+scale = Vector2(0.60275686, 0.60275686)
+texture = ExtResource("2_w0ntc")
+metadata/_edit_group_ = true
+
+[node name="AnimatableBody2D3" type="AnimatableBody2D" parent="." unique_id=500852380 groups=["platforms"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D3" unique_id=1105179599]
+position = Vector2(1439.5, 922.5)
+shape = SubResource("RectangleShape2D_0twnf")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D3" unique_id=1860894653]
+position = Vector2(1386.5, 994.6115)
+rotation = 1.5671531
+scale = Vector2(0.60275686, 0.60275686)
+texture = ExtResource("2_w0ntc")
+metadata/_edit_group_ = true
+
+[node name="AnimatableBody2D4" type="AnimatableBody2D" parent="." unique_id=1319359656 groups=["platforms"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D4" unique_id=1270482413]
+position = Vector2(1439.5, 922.5)
+shape = SubResource("RectangleShape2D_0twnf")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D4" unique_id=1219763285]
+position = Vector2(1386.5, 994.6115)
+rotation = 1.5671531
+scale = Vector2(0.60275686, 0.60275686)
+texture = ExtResource("2_w0ntc")
+metadata/_edit_group_ = true

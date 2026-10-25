@@ -26,6 +26,10 @@ window/size/window_height_override=1500
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
+[global_group]
+
+platforms=""
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
