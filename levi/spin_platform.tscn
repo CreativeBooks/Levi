@@ -12,7 +12,7 @@ script = ExtResource("1_vm2ty")
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=209143746 groups=["platforms"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1496139415]
-position = Vector2(1439.5, 922.5)
+position = Vector2(1440, 926)
 shape = SubResource("RectangleShape2D_0twnf")
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=1273531121]
@@ -25,7 +25,7 @@ metadata/_edit_group_ = true
 [node name="AnimatableBody2D2" type="AnimatableBody2D" parent="." unique_id=869352201 groups=["platforms"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D2" unique_id=1122667225]
-position = Vector2(1439.5, 922.5)
+position = Vector2(1440, 926)
 shape = SubResource("RectangleShape2D_0twnf")
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D2" unique_id=711418877]
@@ -38,7 +38,7 @@ metadata/_edit_group_ = true
 [node name="AnimatableBody2D3" type="AnimatableBody2D" parent="." unique_id=500852380 groups=["platforms"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D3" unique_id=1105179599]
-position = Vector2(1439.5, 922.5)
+position = Vector2(1440, 926)
 shape = SubResource("RectangleShape2D_0twnf")
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D3" unique_id=1860894653]
@@ -51,7 +51,7 @@ metadata/_edit_group_ = true
 [node name="AnimatableBody2D4" type="AnimatableBody2D" parent="." unique_id=1319359656 groups=["platforms"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D4" unique_id=1270482413]
-position = Vector2(1439.5, 922.5)
+position = Vector2(1440, 926)
 shape = SubResource("RectangleShape2D_0twnf")
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D4" unique_id=1219763285]
@@ -64,7 +64,7 @@ metadata/_edit_group_ = true
 [node name="AnimatableBody2D5" type="AnimatableBody2D" parent="." unique_id=802742479 groups=["platforms"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D5" unique_id=970455113]
-position = Vector2(1439.5, 922.5)
+position = Vector2(1440, 926)
 shape = SubResource("RectangleShape2D_0twnf")
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D5" unique_id=1208789719]

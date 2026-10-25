@@ -1,3 +1,42 @@
 [gd_scene format=3 uid="uid://d0ffxvoo0knev"]
 
+[ext_resource type="Script" uid="uid://bi6vbdo3x8gtg" path="res://Scenes/end.gd" id="1_ql4ve"]
+[ext_resource type="Texture2D" uid="uid://dnn1ekhj50oh4" path="res://Assets/pixil-layer-Background (5).png" id="2_q5l5q"]
+[ext_resource type="FontFile" uid="uid://d30ncevijnv7s" path="res://Fonts/BlackOpsOne-Regular.ttf" id="3_t3us6"]
+[ext_resource type="FontFile" uid="uid://chuv23owhk72" path="res://Fonts/Iceberg-Regular.ttf" id="4_d0yn4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kx0vo"]
+bg_color = Color(0, 0, 0, 1)
+
 [node name="End" type="Node2D" unique_id=1755484287]
+script = ExtResource("1_ql4ve")
+
+[node name="PixilLayerBackground(5)" type="Sprite2D" parent="." unique_id=158850791]
+position = Vector2(636, 400.99997)
+scale = Vector2(1.7599999, 1.76)
+texture = ExtResource("2_q5l5q")
+
+[node name="Label" type="Label" parent="PixilLayerBackground(5)" unique_id=1638893300]
+offset_left = -232.95456
+offset_top = -178.40907
+offset_right = 1160.0454
+offset_bottom = 1344.591
+scale = Vector2(0.23145634, 0.20363507)
+theme_override_fonts/font = ExtResource("3_t3us6")
+theme_override_font_sizes/font_size = 607
+text = "THE 
+END"
+
+[node name="Button3" type="Button" parent="." unique_id=1779821619]
+offset_left = 330.99997
+offset_top = 641.0
+offset_right = 1236.3223
+offset_bottom = 812.0
+scale = Vector2(0.3159096, 0.3159096)
+theme_override_colors/font_color = Color(0.20784314, 0.9019608, 0.9490196, 1)
+theme_override_fonts/font = ExtResource("4_d0yn4")
+theme_override_font_sizes/font_size = 124
+theme_override_styles/normal = SubResource("StyleBoxFlat_kx0vo")
+text = "Play Again!"
+
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
