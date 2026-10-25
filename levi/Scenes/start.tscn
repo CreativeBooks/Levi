@@ -5,12 +5,45 @@
 [ext_resource type="FontFile" uid="uid://d30ncevijnv7s" path="res://Fonts/BlackOpsOne-Regular.ttf" id="3_pg4io"]
 [ext_resource type="FontFile" uid="uid://bjpc53hioiy3d" path="res://Fonts/Orbitron-VariableFont_wght.ttf" id="4_iceld"]
 [ext_resource type="FontFile" uid="uid://chuv23owhk72" path="res://Fonts/Iceberg-Regular.ttf" id="5_7pwkw"]
+[ext_resource type="Texture2D" uid="uid://dsidhvh5e46xw" path="res://Assets/6d55e952c701ce3c9df7a75b792ac506.png" id="6_o3wvq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pob1m"]
 bg_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gophc"]
 bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pg4io"]
+size = Vector2(219.5, 334)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iceld"]
+atlas = ExtResource("6_o3wvq")
+region = Rect2(0, 0, 736, 765)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pwkw"]
+atlas = ExtResource("6_o3wvq")
+region = Rect2(736, 0, 736, 765)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bn4p"]
+atlas = ExtResource("6_o3wvq")
+region = Rect2(1472, 0, 736, 765)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qmsyr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iceld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7pwkw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bn4p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D" unique_id=1847512940]
 script = ExtResource("1_rk01k")
@@ -41,10 +74,10 @@ theme_override_font_sizes/font_size = 109
 text = "-The Journey of a Littly-"
 
 [node name="Button" type="Button" parent="." unique_id=1016396815]
-offset_left = 99.0
-offset_top = 337.0
-offset_right = 756.0
-offset_bottom = 508.0
+offset_left = 190.0
+offset_top = 335.0
+offset_right = 847.0
+offset_bottom = 506.0
 scale = Vector2(0.3159096, 0.3159096)
 theme_override_colors/font_color = Color(0.20784314, 0.9019608, 0.9490196, 1)
 theme_override_fonts/font = ExtResource("5_7pwkw")
@@ -53,6 +86,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_pob1m")
 text = "Let's Go!"
 
 [node name="Button2" type="Button" parent="." unique_id=636892867]
+visible = false
 offset_left = 332.99994
 offset_top = 337.99997
 offset_right = 947.99994
@@ -63,6 +97,18 @@ theme_override_fonts/font = ExtResource("5_7pwkw")
 theme_override_font_sizes/font_size = 124
 theme_override_styles/normal = SubResource("StyleBoxFlat_gophc")
 text = "Options"
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1390429985]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1899792679]
+position = Vector2(742.25, 527)
+shape = SubResource("RectangleShape2D_pg4io")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatableBody2D" unique_id=696391174]
+position = Vector2(737, 524)
+sprite_frames = SubResource("SpriteFrames_qmsyr")
+autoplay = "default"
+frame_progress = 0.19959398
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

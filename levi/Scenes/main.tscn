@@ -28,8 +28,9 @@
 [ext_resource type="Script" uid="uid://csq7s7ppfmqkr" path="res://Scenes/st_#5.gd" id="21_ueoa1"]
 [ext_resource type="Script" uid="uid://c5kbbd7mmw3nt" path="res://Scenes/st_#6.gd" id="22_6vcvc"]
 [ext_resource type="Script" uid="uid://dkgwpjwak4kam" path="res://Scenes/character_body_2d.gd" id="22_gt3je"]
-[ext_resource type="Texture2D" uid="uid://bjcpsaa3hqvpv" path="res://icon.svg" id="23_3pmx8"]
+[ext_resource type="Texture2D" uid="uid://c4i1y18oqufej" path="res://Assets/download (5).png" id="29_7k868"]
 [ext_resource type="Texture2D" uid="uid://l4436x6jh2kk" path="res://Assets/download (4).png" id="30_7k868"]
+[ext_resource type="Texture2D" uid="uid://cpryfankfccw6" path="res://Assets/download (6).png" id="31_hpc6h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_344ge"]
 size = Vector2(63.999924, 15.999788)
@@ -4608,9 +4609,6 @@ texture = ExtResource("2_6bp64")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fdnlq")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1w6v2"]
-size = Vector2(126, 128)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e08e2"]
 size = Vector2(319.40625, 72.50104)
 
@@ -4990,14 +4988,14 @@ position = Vector2(1, -725)
 script = ExtResource("22_gt3je")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1798883921]
-position = Vector2(313.51733, 1397.5463)
-scale = Vector2(0.24245848, 0.24291112)
-texture = ExtResource("23_3pmx8")
+position = Vector2(282.48764, 1391.0447)
+scale = Vector2(0.08918394, 0.08935044)
+texture = ExtResource("29_7k868")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1540057379]
-position = Vector2(313.51733, 1396.5463)
-scale = Vector2(0.24245848, 0.24291112)
-shape = SubResource("RectangleShape2D_1w6v2")
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="CharacterBody2D" unique_id=1148444499]
+position = Vector2(284.47748, 1394.6985)
+scale = Vector2(0.08918394, 0.08935044)
+polygon = PackedVector2Array(-53.61731, 238.77051, 4.1245117, 234.65381, 12.373291, 238.77051, 61.866333, 238.77051, 78.36401, 214.07007, 78.36401, 197.60303, 78.36401, 172.90283, 74.239624, 148.2024, 74.239624, 135.85205, 78.36401, 111.151855, 94.861694, 90.568115, 98.986084, 57.634277, 86.61279, 37.050537, 86.61279, 16.466797, 86.61279, 4.116699, 90.73718, 8.233398, 90.73718, 0, 98.986084, 12.350098, 98.986084, -4.116699, 107.23486, 0, 115.483765, -24.70044, 131.98145, -41.167236, 131.98145, -61.750977, 123.732544, -78.21802, 131.98145, -102.91821, 131.98145, -139.969, 127.857056, -177.01953, 103.11047, -234.65381, 57.741943, -263.47095, 12.373291, -275.82104, -8.248779, -279.93774, -8.248779, -292.2881, 4.1245117, -308.75488, 16.49768, -312.87158, -8.248779, -316.98828, -37.11975, -288.1714, -41.24414, -304.63818, -65.9906, -321.10522, -53.61731, -288.1714, -148.479, -247.0039, -193.84753, -164.66919, -197.97192, -115.268555, -197.97192, -78.21802, -181.47424, -37.050537, -173.22546, -28.817139, -173.22546, 0, -160.85217, 8.233398, -131.98132, 16.466797, -127.85693, 28.817139, -115.48364, 20.58374, -111.35925, 37.050537, -103.11035, 20.58374, -94.86157, 45.283936, -86.61267, 28.817139, -82.48828, 41.167236, -86.61267, 69.984375, -94.86157, 115.268555, -98.98596, 139.96875, -94.86157, 172.90283, -86.61267, 201.71997, -70.11499, 222.30347)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1797959931]
 position = Vector2(430, 1100)
@@ -5050,5 +5048,10 @@ texture = ExtResource("30_7k868")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=981799547]
 position = Vector2(4906, -74)
 shape = SubResource("RectangleShape2D_hdf80")
+
+[node name="Download(6)" type="Sprite2D" parent="." unique_id=1244755146]
+position = Vector2(4738.0005, 537)
+scale = Vector2(0.5421429, 0.5421429)
+texture = ExtResource("31_hpc6h")
 
 [connection signal="body_entered" from="Area2D2" to="CharacterBody2D" method="_on_area_2d_2_body_entered"]
