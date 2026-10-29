@@ -5,7 +5,7 @@ Demo Link: https://aerobotx.itch.io/levi
 
 The idea of this game was centered around showing a contrast between the character and their surroundings in order to really emphasize the theme "I'm just a little guy." We originally wanted to go with the city of New York, but that sounded too cliche, so we went with Shanghai. The city had to have really interesting skyscrapers just to add to the experience and Shanghai had a nice selection of skyscrapers, though we weren't able to get to more than three. If I were to work on this game more, I would finish the shanghai skyline, introduce newer challenges to climb the tower, and perhaps even more cities!
 
-All of the art was drawn by me (CreativeBooks) and Reyxoxo. 
+All of the art was drawn by me (aerostruck, previously CreativeBooks) and Reyxoxo. 
 
 Some images:
 <img width="504" height="404" alt="Screenshot 2026-10-25 at 4 50 42 PM" src="https://github.com/user-attachments/assets/9d38e962-cf3c-407e-8302-7b5099f0cd91" />
